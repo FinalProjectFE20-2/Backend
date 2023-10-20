@@ -21,7 +21,6 @@ exports.createCustomer = (req, res, next) => {
   // Clone query object, because validator module mutates req.body, adding other fields to object
   const initialQuery = _.cloneDeep(req.body);
   initialQuery.customerNo = rand();
-  console.log(initialQuery);
 
   // Check Validation
   const { errors, isValid } = validateRegistrationForm(req.body);
