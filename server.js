@@ -39,7 +39,12 @@ const db = require('./config/keys').mongoURI;
 // Connect to MongoDB
 mongoose
   .connect(db, { useNewUrlParser: true, useFindAndModify: false })
-  .then(() => console.log('MongoDB Connected'))
+  .then(() => {console.log('MongoDB Connected')
+// Next code
+
+}
+  
+  )
   .catch((err) => console.log(err));
 
 // Passport middleware
