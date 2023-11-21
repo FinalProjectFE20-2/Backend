@@ -118,7 +118,7 @@ exports.loginCustomer = async (req, res, next) => {
           jwt.sign(
             payload,
             keys.secretOrKey,
-            { expiresIn: 36000 },
+            { expiresIn: '365d' },
             (err, token) => {
               res.json({
                 success: true,
