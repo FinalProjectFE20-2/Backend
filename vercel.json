@@ -1,7 +1,4 @@
 {
-    "rewrites": [
-        {"source": "/(.*)", "destination": "/"}
-    ],
     "version": 2,
     "builds": [
       {
@@ -10,8 +7,8 @@
       }
     ],
     "routes": [
-        { "handle": "filesystem" ,
-          "src": "/(.*)", "status": 404, "dest": "/*" ,
+      {
+        "src": "/(.*)",
         "dest": "server.js"
       }
     ]
