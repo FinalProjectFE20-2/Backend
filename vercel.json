@@ -1,8 +1,7 @@
 {
   "rewrites": [
-        {"source": "/(.*)", "destination": "/"}
-    ],
-    
+    { "source": "/api/(.*)", "destination": "/api/404.js" }
+  ],
     "version": 2,
     "builds": [
       {
